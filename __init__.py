@@ -12,6 +12,6 @@ gym.register(
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": f"{__name__}.f1tenth_env:F1tenthEnvCfg",
-        # TODO: "skrl_cfg_entry_point": f"{agents.__name__}:skrl_ppo_cfg.yaml",
+        "skrl_cfg_entry_point": f"{agents.__name__}:skrl_ppo_cfg.yaml", # TODO
     },
 )
